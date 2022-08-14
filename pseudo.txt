@@ -1,0 +1,38 @@
+MAIN IDEA 
+
+3 Functionalities :
+
+- See files in a dir : ✔
+        This comand allows teh user to check for files in a specified dir
+
+        - Command : string[] filePaths = Directory.GetFiles(@"c:\MyDir\"); 
+                    returns :
+                        file -1
+                        file -2
+                        file -3 . . .
+
+- Move all or specified category of files to another dir : ✔
+        This command will help organize the quickly
+
+        - Command :
+              code [
+                        string sourceFile = 'Original file location' ✔
+                        string sourceDestination = 'Location the file is supposed to be moved to'
+
+                        System.IO.File.Move(sourceFile, destinationFile);
+
+                        |--------------------------------------------------------------|
+                        |------------------- MOVING SPECIFIED FILES -------------------|  - ✔ -
+                        |--------------------------------------------------------------|
+
+                        string filepath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                        DirectoryInfo d = new DirectoryInfo(filepath);
+
+                        foreach (var file in d.GetFiles("*.txt"))
+                        {
+                            Directory.Move(file.FullName, filepath + "\\TextFiles\\" + file.Name);
+                        }
+
+                        // This will move the specified type of files 
+
+              ]
