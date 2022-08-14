@@ -2,8 +2,8 @@
 This is a time boosting file manager created with C# . It can raise file management efficiency by completing simple tasks 
 such as : 
 
-- **SCANNING FILES IN A DIR**
-- **SCANNING FOR FILES WITH A UNIQUE EXTENSION IN A DIR**
+- **SCANNING FILES IN A DIRECTORY**
+- **SCANNING FOR FILES WITH A UNIQUE EXTENSION IN A DIRECTORY**
 - **MOVE FILES**
 - **MOVE FILES WITH A SPECIFIED EXTENSION**
 
